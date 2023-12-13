@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SAMLSPSample.Scripts.WebForms.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <%--    <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Site.css" rel="stylesheet" type="text/css" />--%>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">ASP.NET with Angular (Master PageSAMLSPSample.Scripts.WebForms.Site1)</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home (PageSAMLSPSample.Scripts.WebForms.Site1) </a></li>
+                <li><a href="#">About Me</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+    <script src="../jquery-1.10.2.js"></script>
+    <script src="../bootstrap.js"></script>
+    <script src="../angular.js"></script>
+    <script src="../angular-resource.min.js"></script>
+    <script src="../app.js"></script>
+    <script src="../data.js"></script>
+    <script src="../studentCtrl.js"></script>
+    <script src="https://cdn.cookielaw.org/consent/150e70fb-38e3-4290-9e18-184ead6641fa-test/otSDKStub.js" type="text/javascript" charset="UTF-8"
+        data-domain-script="150e70fb-38e3-4290-9e18-184ead6641fa-test"></script>
+    <script type="text/javascript">
+        function OptanonWrapper() { }
+    </script>
+</body>
+</html>
